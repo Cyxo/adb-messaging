@@ -1,0 +1,129 @@
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+*:focus {
+    outline: none;
+}
+
+.flex{
+  display: flex;
+  overflow: hidden;
+}
+
+.col{ flex-direction: column; }
+
+.flex.main{
+  width: 100%;
+  height: 100%;
+}
+
+.flex.left {
+  flex-basis: 240px;
+  border-right: solid 1px lightgray;
+  height: 100%;
+}
+.flex.right { flex-basis: calc(100% - 240px) }
+
+.overflow{ overflow: visible; }
+
+.flex.title{ font-weight: bold; }
+
+.dt,.desc{ display: inline-block; }
+
+.dt{
+  float: right;
+  max-width: 3.75em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: right;
+}
+
+.desc{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 4em);
+  overflow: hidden;
+}
+
+.flex.list ul{
+  padding-left: 0;
+  overflow: auto;
+  margin: 0;
+  max-height: calc(100vh - 50px);
+}
+
+.flex.list ul li{
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.flex.list ul li:hover{ background: rgba(0, 0, 0, 0.1); }
+.flex.list ul li:active{ background: rgba(0, 0, 0, 0.2); }
+.flex.list ul li.selected{ background: rgba(0, 0, 0, 0.15); }
+
+input, textarea{
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.search input{
+  flex-basis: 100%;
+  margin: 10px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 7px 20px;
+}
+
+.flex.messages{
+  flex-basis: calc(100% - 68px);
+}
+
+.flex.messages ul{
+  list-style: none;
+  padding: 0 16px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.flex.controls{
+  flex-basis: 68px;
+  border-top: solid 1px lightgray;
+}
+
+.controls textarea{
+  font-size: 1rem;
+  flex-basis: 100%;
+  margin: 10px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 15px 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  resize: none;
+}
+
+.message{
+  padding: 7px 20px;
+  background-color: #2885FF;
+  color: white;
+  border-radius: 20px;
+  max-width: calc(75% - 32px);
+  align-self: flex-start;
+  display: block;
+}
+
+.message.sent{
+  background-color: #00C90B;
+  align-self: flex-end;
+}
