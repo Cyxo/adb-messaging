@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
@@ -16,11 +15,8 @@
         </div>
       </div>
       <div class="flex right col">
-        <div class="flex messages col">
-          <ul>
-            <li class="message">Salut</li>
-            <li class="message sent">Salut, ça va ?</li>
-          </ul>
+        <div class="flex messages col overflow">
+          <ul></ul>
         </div>
         <div class="flex controls">
           <textarea id="sms_body" placeholder="Message" rows="1" autofocus></textarea>
@@ -30,10 +26,10 @@
 
     <template id="convo">
       <li class="flex item col">
-        <div class="flex title">Louise &lt;3</div>
+        <div class="flex title"></div>
         <div class="info">
-          <div class="desc">Ah ok ^^</div>
-          <div class="dt">13:21</div>
+          <div class="desc"></div>
+          <div class="dt"></div>
         </div>
       </li>
     </template>

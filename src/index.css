@@ -29,7 +29,7 @@ html, body {
 }
 .flex.right { flex-basis: calc(100% - 240px) }
 
-.overflow{ overflow: visible; }
+.overflow{ overflow: auto; }
 
 .flex.title{ font-weight: bold; }
 
@@ -91,7 +91,6 @@ input, textarea{
   list-style: none;
   padding: 0 16px;
   display: flex;
-  height: 100%;
   flex-direction: column;
   justify-content: flex-end;
 }
@@ -121,6 +120,7 @@ input, textarea{
   max-width: calc(75% - 32px);
   align-self: flex-start;
   display: block;
+  margin-bottom: 5px;
 }
 
 .message.sent{
