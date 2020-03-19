@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="flex main">
+      <div class="flex left col">
+        <div class="flex search">
+          <input type="text" id="search" placeholder="Search...">
+        </div>
+        <div class="flex list overflow col">
+          <ul></ul>
+        </div>
+      </div>
+      <div class="flex right col">
+        <div class="flex messages col">
+          <ul>
+            <li class="message">Salut</li>
+            <li class="message sent">Salut, ça va ?</li>
+          </ul>
+        </div>
+        <div class="flex controls">
+          <textarea id="sms_body" placeholder="Message" rows="1" autofocus></textarea>
+        </div>
+      </div>
+    </div>
+
+    <template id="convo">
+      <li class="flex item col">
+        <div class="flex title">Louise &lt;3</div>
+        <div class="info">
+          <div class="desc">Ah ok ^^</div>
+          <div class="dt">13:21</div>
+        </div>
+      </li>
+    </template>
+
+    <script src="jquery.slim.min.js" charset="utf-8"></script>
+    <script src="local.js" charset="utf-8"></script>
+  </body>
+</html>
