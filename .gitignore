@@ -90,3 +90,4 @@ out/
 
 # Personnal databases
 src/*.db*
+src/*.db
